@@ -1,0 +1,92 @@
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-image: url('oosterwolde.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    color: red;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 20px;
+}
+
+/* ===== LINKERDEEL ===== */
+.links {
+    margin-bottom: 20px;
+}
+
+.links ul {
+    padding-left: 20px;
+}
+
+/* ===== RECHTERDEEL ===== */
+.rechts {
+    background-color: #e6eef5;
+    padding: 20px;
+}
+
+.blok {
+    margin-bottom: 25px;
+}
+
+/* ===== MOBILE FIRST ===== */
+article {
+    display: block;
+}
+
+.afbeelding img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===== MEDIAQUERY ===== */
+@media (min-width: 768px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 9fr;
+        gap: 20px;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tekst {
+        flex: 1;
+    }
+
+    .afbeelding {
+        margin-left: 20px;
+    }
+
+    .afbeelding img {
+        margin-top: 0;
+    }
